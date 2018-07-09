@@ -1,6 +1,6 @@
 # Sweet Sweet Node.js Version Of Some Other Project
 
-This is the Node.js version of the exact work that is done here: https://github.com/alisabrigok/php-symfony-test
+This is the Node.js version of the exact work that is done here: https://github.com/alisabrigok/php-symfony-backend-test
 
 There are a few changings that differs from that project though.
 

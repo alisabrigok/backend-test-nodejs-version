@@ -1,0 +1,33 @@
+<% include partials/header %>
+
+    <h1 class="display-4">THE TASK -
+        <em>Version Node.js</em>
+    </h1>
+    <p>Get the cheapest exchange rates.</p>
+    <hr class="my-4">
+    <% if (currencies.length) { %>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% currencies.forEach(currency => { %>
+                    <tr>
+                        <td>
+                            <%= currency.name %>
+                        </td>
+                        <td>
+                            <%=  currency.value %>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+        <% } else { %>
+            <td colspan="2">Something went wrong. Please try again later.</td>
+            <% } %>
+
+                <% include partials/footer %>
